@@ -18,11 +18,11 @@ public class Localizacion extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
+       // if (savedInstanceState == null) {
+       //     getSupportFragmentManager().beginTransaction()
+       //             .add(R.id.container, new PlaceholderFragment())
+       //             .commit();
+       // }
     }
 
 
@@ -48,7 +48,7 @@ public class Localizacion extends ActionBarActivity {
 
     /**
      * A placeholder fragment containing a simple view.
-     */
+
     public static class PlaceholderFragment extends Fragment {
 
         public PlaceholderFragment() {
@@ -57,9 +57,9 @@ public class Localizacion extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.main, container, false);
+            View rootView = inflater.inflate(R.layout.asteroides, container, false);
             return rootView;
         }
     }
-
+     */
 }

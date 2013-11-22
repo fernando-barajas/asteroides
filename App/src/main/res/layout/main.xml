@@ -1,7 +1,37 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dip"
     tools:context=".Localizacion"
-    tools:ignore="MergeRootFrame" />
+    tools:ignore="MergeRootFrame">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloAplicacion"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dip"/>
+
+    <Button android:id="@+id/Button01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Arrancar"/>
+    <Button android:id="@+id/Button02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Configurar"/>
+    <Button android:id="@+id/Button03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Acercade"/>
+    <Button android:id="@+id/Button04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Salir"/>
+
+    </LinearLayout>
